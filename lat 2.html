@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halaman kontak</title>
+  </head>
+  <body>
+    <header>
+      <h1>Hubungi kami</h1>
+      <p>Silahkan isi formulir di bawah ini untuk menghubungi kami</p>
+    </header>
+
+    <main>
+      <form action="" method="post">
+        <div>
+          <label for="nama">Nama</label>
+          <input
+            type="text"
+            id="nama"
+            required
+            placeholder="Masukan Nama Anda"
+          />
+        </div>
+
+        <br />
+
+        <div>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            required
+            placeholder="Masukan Email Anda"
+          />
+        </div>
+
+        <br />
+
+        <div>
+          <label for="pesan">Pesan</label>
+          <textarea
+            name="pesan"
+            id="pesan"
+            rows="5"
+            cols="49"
+            placeholder="Tulis Pesan Anda"
+          ></textarea>
+        </div>
+
+        <br />
+
+        <div>
+          <label for="subjek">Subjek</label><br />
+          <select name="subjek" id="subjek">
+            <option value="">Pilih Subjek</option>
+            <option value="pertanyaan">Pertanyaan</option>
+            <option value="kritik">Kritik</option>
+            <option value="saran">Saran</option>
+          </select>
+        </div>
+        <br />
+
+        <button type="submit">Kirim</button>
+      </form>
+    </main>
+  </body>
+</html>
