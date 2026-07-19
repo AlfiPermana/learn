@@ -1,0 +1,11 @@
+* 
+
+/* 1. Box sizing: supaya padding dan border tidak menambah lebar elemen (lebih mudah menghitung ukuran elemen) */
+{
+box-sizing: border-box;
+}
+
+/* 2. styling dasar body:
+    - font-family : jenis huruf
+    = background-color L warna latar halaman
+    - color */
