@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cara Kerja Laravel di Balik Layar - TechBlog.id</title>
+  </head>
+  <body>
+    <header>
+      <h1>Techblog.id</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Beranda</a></li>
+          <li><a href="artikel">Artikel</a></li>
+          <li><a href="kontak">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <article>
+        <header>
+          <h2>Cara Kerja Laravel di balik layar</h2>
+          <!-- ✅ h2, bukan h1 -->
+          <p>Ditulis Oleh Admin | 31 Juli 2026</p>
+        </header>
+        <p>
+          Laravel menggunakan pola MVC (Model View Controller) untuk memisahkan
+          logika bisnis, tampilan dan alur data.
+        </p>
+        <p>
+          Ketika sebuah request masuk, laravel akan melewatkannya lewat routing,
+          middleware, lalu ke controller sebagai response ke browser.
+        </p>
+
+        <section>
+          <h3>Komentar</h3>
+          <article>
+            <header>Budi | 31 Juli 2026</header>
+            <p>Penjelasan MVC-nya jelas banget, makasih min</p>
+          </article>
+          <!-- ✅ ditutup -->
+          <article>
+            <header>
+              <p>Sari | 31 Juli 2026</p>
+            </header>
+            <p>Ditunggu Article lanjutannya soal middleware ya.</p>
+          </article>
+          <!-- ✅ ditutup -->
+        </section>
+      </article>
+      <!-- ✅ article utama ditutup -->
+
+      <aside>
+        <section>
+          <h2>Artikel Terkait</h2>
+          <ul>
+            <li><a href="#">Mengenal REST API untuk Pemula</a></li>
+            <li><a href="#">Git Untuk Pemula</a></li>
+          </ul>
+        </section>
+      </aside>
+    </main>
+    <!-- ✅ main ditutup -->
+  </body>
+</html>
