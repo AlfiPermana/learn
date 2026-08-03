@@ -1,11 +1,17 @@
-* 
-
 /* 1. Box sizing: supaya padding dan border tidak menambah lebar elemen (lebih mudah menghitung ukuran elemen) */
-{
-box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 /* 2. styling dasar body:
     - font-family : jenis huruf
-    = background-color L warna latar halaman
+    - background-color : warna latar halaman
     - color */
+
+/* Latihan Level 1 — Box Model */
+.kartu {
+  width: 300px;
+  padding: 15px;
+  border: 2px solid black;
+  margin: 10px;
+}
