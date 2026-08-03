@@ -1,0 +1,22 @@
+/* PARENT: position relative supaya badge ngukur dari sini */
+.kartu-produk {
+  width: 200px;
+}
+
+/* CHILD: nempel di pojok kanan atas .kartu-produk */
+.badge-diskon {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  background-color: red;
+  color: white;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
