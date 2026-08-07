@@ -1,0 +1,62 @@
+/* ==============================
+   BODY — background supaya kartu kontras
+   ============================== */
+body {
+  background-color: #f0f2f5;
+}
+
+/* ==============================
+   .kartu-profil — Box Model
+   ============================== */
+.kartu-profil {
+  box-sizing: border-box; /* width tidak melar walau ada padding/border */
+  position: relative;     /* jangkar untuk .badge-status */
+  width: 280px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  background-color: white;
+  margin: 60px auto;      /* center horizontal + jarak dari atas */
+}
+
+/* ==============================
+   .badge-status — Positioning
+   "relative parent, absolute child"
+   ============================== */
+.badge-status {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  background-color: #22c55e; /* hijau */
+  color: white;
+  padding: 3px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 999px;      /* pill shape */
+}
+
+/* ==============================
+   .btn-hubungi — Specificity Challenge
+   ============================== */
+
+/* Prediksi: #btn-utama akan MENANG karena ID (1,0,0) > class (0,1,0) */
+
+/* Aturan 1: pakai class → specificity (0,1,0) */
+.btn-hubungi {
+  background-color: royalblue; /* KALAH */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+/* Aturan 2: pakai ID → specificity (1,0,0) → MENANG */
+#btn-utama {
+  background-color: #f97316; /* oranye — ini yang tampil */
+}

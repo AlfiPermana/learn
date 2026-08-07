@@ -1,5 +1,6 @@
 /* PARENT: position relative supaya badge ngukur dari sini */
 .kartu-produk {
+  position: relative;
   width: 200px;
 }
 
