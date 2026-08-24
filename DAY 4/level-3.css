@@ -10,20 +10,25 @@
 
 header {
   grid-area: header;
+  background-color: black;
 }
 
 .sidebar {
   grid-area: sidebar;
+  background-color: blue;
 }
 
 main {
   grid-area: content;
+  background-color: green;
 }
 
 .right {
   grid-area: right;
+  background-color: black;
 }
 
 footer {
   grid-area: footer;
+  background-color: blue;
 }
