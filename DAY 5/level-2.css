@@ -1,0 +1,19 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 {
+  height: 150px;
+}
+
+/* 
+
+pada lebar layar sekitar 1000px dengan minmax(200px, 1fr)  akan muncuk kira kira 4 kolom, browser mencoba memasukan kolom sebanyak mungkin, tetapi setiap kolom mempunyai minimal 200px dan memiliki setiap jarak antar kolom 16 px. karena 4 kolom membutuhkan 4 × 200 + 3 × 16 = 848px, maka 4 kolom masih muat sedangkan 5 dan 6 kolom sudah melebihi batas minimal lebar pada layar yang sekitar 1000px sehingga tidak muat
+*/

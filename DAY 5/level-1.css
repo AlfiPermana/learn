@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+/* kode ini disebut mobile first karena kita nebulis css dasar terlebih dahulu untuk kondisi layar kecil yaitu flix-direction: column sehingga kotak akan tersusun secara vertikal. kemudian melalui @media (min-width: 768px), kita mengubah menjadi row ketika layarnya lebih lebar sehingga kotak akan tersusun secara horizontal */
